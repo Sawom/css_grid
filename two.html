@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: 500px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            
+            /* auto-fit diye jayga khali thakle auto fit kore nibe r minmax diye css decision ney
+            ze hoy 100px or zei area bole dibo or seta na pele 1fr nibe. jayga khali rakhbe na. */
+
+            /* auto-fill vs auto-fit: auto-fill e space pawar por boro device e gele baki space blank
+            rakhe, but auto-fit kono space blank rakhe na. shb fillup kore. 
+            max time auto-fit e use korbo. */
+            
+            grid-template-rows:  repeat(2, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <a href="three.html"> next example</a>
+    <div class="container">
+
+        <div class="header" style="background-color: blue; text-align: center; color: beige;" > 1 <br><br><br> </div>
+        <div class="menu" style="background-color: red; text-align: center; color: beige;" > 2 <br><br><br> </div>
+        <div class="content" style="background-color: green; text-align: center; color: beige;" > 3 <br><br><br> </div>
+        <div class="footer" style="background-color: purple; text-align: center; color: beige;" > 4 <br><br><br> </div>
+        <div class="header" style="background-color: blue; text-align: center; color: beige;" > 5 <br><br><br> </div>
+        <div class="menu" style="background-color: red; text-align: center; color: beige;" > 6 <br><br><br> </div>
+        <div class="content" style="background-color: green; text-align: center; color: beige;" > 7 <br><br><br> </div>
+        <div class="footer" style="background-color: purple; text-align: center; color: beige;" > 8 <br><br><br> </div>
+        <div class="content" style="background-color: green; text-align: center; color: beige;" > 9 <br><br><br> </div>
+        <div class="footer" style="background-color: purple; text-align: center; color: beige;" > 10 <br><br><br> </div>
+
+    </div>
+</body>
+</html>
